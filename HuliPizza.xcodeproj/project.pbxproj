@@ -14,6 +14,7 @@
 		B00BC29F2697455300EE3A96 /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00BC29E2697455300EE3A96 /* HistoryDetailView.swift */; };
 		B00BC2A126974EFA00EE3A96 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00BC2A026974EFA00EE3A96 /* RootTabView.swift */; };
 		B00BC2A3269754EB00EE3A96 /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00BC2A2269754EB00EE3A96 /* ConfirmView.swift */; };
+		B00BC2A52697924600EE3A96 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00BC2A42697924600EE3A96 /* MapViewController.swift */; };
 		B081F8082694B5D700BD9255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081F8072694B5D700BD9255 /* AppDelegate.swift */; };
 		B081F80A2694B5D700BD9255 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081F8092694B5D700BD9255 /* SceneDelegate.swift */; };
 		B081F80C2694B5D700BD9255 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081F80B2694B5D700BD9255 /* ContentView.swift */; };
@@ -42,6 +43,7 @@
 		B00BC29E2697455300EE3A96 /* HistoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
 		B00BC2A026974EFA00EE3A96 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		B00BC2A2269754EB00EE3A96 /* ConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
+		B00BC2A42697924600EE3A96 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B081F8042694B5D700BD9255 /* HuliPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuliPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B081F8072694B5D700BD9255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B081F8092694B5D700BD9255 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				B081F8072694B5D700BD9255 /* AppDelegate.swift */,
 				B00BC2A026974EFA00EE3A96 /* RootTabView.swift */,
 				B081F8092694B5D700BD9255 /* SceneDelegate.swift */,
+				B00BC2A42697924600EE3A96 /* MapViewController.swift */,
 				B081F80D2694B5DA00BD9255 /* Assets.xcassets */,
 				B081F8122694B5DA00BD9255 /* LaunchScreen.storyboard */,
 				B081F8152694B5DA00BD9255 /* Info.plist */,
@@ -243,6 +246,7 @@
 				B0F395662695F6D60061A4DA /* PageTitleView.swift in Sources */,
 				B00BC2A126974EFA00EE3A96 /* RootTabView.swift in Sources */,
 				B00BC297269731D700EE3A96 /* MenuModel.swift in Sources */,
+				B00BC2A52697924600EE3A96 /* MapViewController.swift in Sources */,
 				B0F3956C2695F9280061A4DA /* HistoryView.swift in Sources */,
 				B0F3955A2695F3110061A4DA /* OrderListView.swift in Sources */,
 				B0F3955E2695F45B0061A4DA /* ContentHeaderView.swift in Sources */,

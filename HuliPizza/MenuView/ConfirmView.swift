@@ -33,19 +33,34 @@ struct ConfirmView: View {
             Divider()
             SelectedImageView(image: "\(menuID)_250w")
                 .padding(10)
+                .onTapGesture(count: 2){
+                self.isPresented = false
+                }
             Divider()
             Text("Confirm your order of \(quantity) \(size.formatted())\(name) pizza")
                 .font(.headline)
             TextField("Add your comments here", text: $comments)
                 .background(Color("G4"))
+            SizePickerView(size: $size)
+            QuantityStepperView(quantity: $quantity)
             Spacer()
-            Button(action: addItem){
-                Text("Add")
-                    .font(.title)
-                .padding()
-                .background(Color("G4"))
-                .cornerRadius(10)
-            }.padding([.bottom])
+            HStack {
+                Button(action: addItem){
+                    Text("Add")
+                        .font(.title)
+                    .padding()
+                    .background(Color("G4"))
+                    .cornerRadius(10)
+                }.padding([.bottom])
+                Spacer()
+                Button(action: {isPresented = false}){
+                    Text("Cancel")
+                        .font(.title)
+                    .padding()
+                    .background(Color("G4"))
+                    .cornerRadius(10)
+                }.padding([.bottom])
+            }.padding()
         }
         .background(Color("G3"))
         .foregroundColor(Color("IP"))
