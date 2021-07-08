@@ -16,7 +16,7 @@ struct HistoryListView: View {
         NavigationView{
             List(historyModel.historyItems) { item in
                 NavigationLink(destination:
-                    HistoryDetailView(historyItem: item, imageID: self.$imageID)
+                                HistoryDetailView(historyItem: item, imageID: self.$imageID)
                 ){
                     HistoryRowView(historyItem:item)
                 }
