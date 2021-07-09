@@ -20,7 +20,6 @@ struct ListHeaderView: View {
                 .fontWeight(.heavy)
                 .padding()
         }
-        .background(Color("IP"))
         .font(.headline)
         .background(Color("G4"))
     }
