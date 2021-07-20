@@ -14,7 +14,7 @@ struct ListHeaderView: View {
         HStack {
             Text(text)
                 .padding(.leading, 5)
-                .foregroundColor(Color("G2"))
+                .foregroundColor(Color("G1"))
             Spacer()
             Text(orderModel.formattedTotal)
                 .fontWeight(.heavy)
