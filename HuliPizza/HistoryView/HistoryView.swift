@@ -14,7 +14,7 @@ struct HistoryView: View {
             //ContentHeaderView()
             PageTitleView(title:"Pizza History")
             SelectedImageView(image:"\(imageID)_250w")
-                .padding(5)
+                .padding(10)
             HistoryListView(imageID:$imageID)
         }
     }

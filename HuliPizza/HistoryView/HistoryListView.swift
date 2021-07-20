@@ -7,11 +7,10 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct HistoryListView: View {
     var historyModel = HistoryModel()
     @Binding var imageID:Int
+    
     var body: some View {
         NavigationView{
             List(historyModel.historyItems) { item in

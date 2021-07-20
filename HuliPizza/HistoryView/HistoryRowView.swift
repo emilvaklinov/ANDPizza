@@ -16,14 +16,16 @@ struct HistoryRowView: View {
                 .shadow(color: Color.black.opacity(0.5), radius: 10, x: 5, y: 5)
             Text(historyItem.name)
                 .font(.title)
+                .padding()
             Spacer()
-        }.overlay(
-            Image(systemName:"chevron.right.square")
-            .padding()
-                .font(.title)
-            .foregroundColor(Color("G3"))
-            ,alignment:.trailing
-        )
+        }
+//        .overlay(
+//            Image(systemName:"chevron.right.square")
+//            .padding()
+//                .font(.title)
+//            .foregroundColor(Color("G3"))
+//            ,alignment:.trailing
+//        )
     }
 }
 

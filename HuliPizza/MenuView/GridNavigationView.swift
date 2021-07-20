@@ -25,7 +25,7 @@ struct GridNavigationView:View {
                             Text(menuPart.name).font(.headline)
                         }.frame(width:100)
 //                        VStack{
-                        LazyVGrid(columns:[bigColumn] + columns, spacing: 5){
+                        LazyVGrid(columns:[bigColumn] + columns, spacing: 10){
                             if let children = menuPart.children{
                                 ForEach(children){ child in
                                     NavigationLink(destination:MenuDetailView(orderModel:self.orderModel,menuItem:child)){
