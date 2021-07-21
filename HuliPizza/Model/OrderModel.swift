@@ -116,9 +116,9 @@ class OrderModel:ObservableObject{
     
     /// Three items added for testing. Remove for functional use.
     init(){
-//        add(menuID: 1)
-        add(menuID: 0)
-        add(menuID: 6)
+        add(menuID: 1)
+//        add(menuID: 0)
+//        add(menuID: 6)
     }
     
 }
