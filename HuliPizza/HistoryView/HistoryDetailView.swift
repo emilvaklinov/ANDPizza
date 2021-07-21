@@ -25,7 +25,6 @@ struct HistoryDetailView: View {
             Text(historyItem.history)
                 .frame(height:300)
                 .padding()
-                cornerRadius(14)
             Spacer()
             }
         }
