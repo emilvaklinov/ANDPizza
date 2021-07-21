@@ -10,20 +10,21 @@ import SwiftUI
 struct GridNavigationView:View {
     @ObservedObject var orderModel:OrderModel
     var menuList = MenuModel().menu
-    let columns = Array(repeating: GridItem(.flexible(minimum:60), spacing: 5, alignment: .top), count: 2)
-    let bigColumn = GridItem(.flexible(minimum:100, maximum:120), spacing: 10, alignment: .top)
+    let columns = Array(repeating: GridItem(.flexible(minimum:75), spacing: 5, alignment: .top), count: 2)
+    let bigColumn = GridItem(.flexible(minimum:100, maximum:120), spacing: 5, alignment: .top)
     var body: some View {
         ScrollView{
             VStack{
                 ForEach(menuList){ menuPart in
                     HStack(alignment:.top){
                         VStack(alignment:.trailing){
-                            Image("PizzaHub-Logo")
+                            Image("AND")
                                 .resizable()
                                 .scaledToFit()
-                                .padding(.bottom,20)
+//                                .padding(.bottom,5)
                             Text(menuPart.name).font(.headline)
-                        }.frame(width:100)
+                                .padding(.bottom,5)
+                        }.frame(width:90)
 //                        VStack{
                         LazyVGrid(columns:[bigColumn] + columns, spacing: 10){
                             if let children = menuPart.children{
@@ -33,6 +34,9 @@ struct GridNavigationView:View {
                                             Image("\(child.id)_100w")
                                                 .resizable()
                                                 .scaledToFit()
+                                                .clipShape(Capsule())
+                                                    .shadow(color: Color.black.opacity(0.5),
+                                                            radius: 5, x: 5, y: 5)
                                         }
                                     }
                                 }
