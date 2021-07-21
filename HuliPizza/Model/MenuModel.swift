@@ -25,7 +25,7 @@ struct MenuItem:Identifiable{
     var children:[MenuItem]? = nil
 }
 
-let testMenuItem =  MenuItem(id:1, name: "Huli Chicken", description: "Our original Hawaiian street food pizza, with Huli Huli chicken, onions, ginger, crushed macadamia nuts, tomato sauce, and cheese on a classic crust.", price: 14.00, rating: 6)
+let testMenuItem =  MenuItem(id:1, name: "Hamilton Chicken", description: "Our original Hawaiian street food pizza, with Huli Huli chicken, onions, ginger, crushed macadamia nuts, tomato sauce, and cheese on a classic crust.", price: 14.00, rating: 6)
 
 
 struct MenuModel{
@@ -38,7 +38,7 @@ struct MenuModel{
                  rating: 5,
                  type:.pizza ),
         MenuItem(id: 1,
-                 name: "Huli Chicken",
+                 name: "Hamilton Chicken",
                  description: "Our original Hawaiian street food pizza, with huli huli chicken, onions, ginger, crushed macadamia nuts, tomato sauce and cheese on a classic crust.",
                  price: 14.00,
                  rating: 6,

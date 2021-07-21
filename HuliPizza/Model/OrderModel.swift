@@ -45,7 +45,7 @@ struct OrderItem:Identifiable{
     }
     /// A `String` of the extended price
     var formattedExtendedPrice:String{
-        String(format:"$%3.2f",extendedPrice)
+        String(format:"£%3.2f",extendedPrice)
     }
     /// A `String` describing an order
     var description:String{
@@ -84,9 +84,9 @@ class OrderModel:ObservableObject{
         orders.last?.id ?? -1
     }
     
-    /// Returns total as a string in $0.00 format
+    /// Returns total as a string in £0.00 format
     var formattedTotal:String{
-        String(format:"$%3.2f",total)
+        String(format:"£%3.2f",total)
     }
     
     
@@ -126,7 +126,7 @@ class OrderModel:ObservableObject{
 /// A test copy of the OrderModel
 let testOrderModel = OrderModel()
 /// A test copy of the OrderItem()
-let testOrderItem = OrderItem(id: 1, menuID: 1, name: "Huli Chicken", comments: "Add more macadamias!", price: 9.99, size: .medium, quantity: 1)
+let testOrderItem = OrderItem(id: 1, menuID: 1, name: "Hamilton Chicken", comments: "Add more macadamias!", price: 9.99, size: .medium, quantity: 1)
 
 
 
