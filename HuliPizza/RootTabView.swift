@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct RootTabView: View {
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor(Color("R1"))
+        }
     var body: some View {
         TabView{
             ContentView(orderModel: OrderModel())

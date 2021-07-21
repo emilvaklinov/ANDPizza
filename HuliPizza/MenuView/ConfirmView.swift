@@ -37,10 +37,16 @@ struct ConfirmView: View {
                 self.isPresented = false
                 }
             Divider()
-            Text("Confirm your order of \(quantity) \(size.formatted())\(name) pizza")
-                .font(.headline)
+            Text("Confirm your \(quantity) \(size.formatted())\(name)")
+                .font(.body)
             TextField("Add your comments here", text: $comments)
-                .background(Color("G4"))
+                .frame(height: 40)
+                .padding([.horizontal], 4)
+//                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .background(Color("G2"))
+                .cornerRadius(10)
+                .padding([.horizontal], 20)
+            
             SizePickerView(size: $size)
             QuantityStepperView(quantity: $quantity)
             Spacer()
@@ -49,8 +55,8 @@ struct ConfirmView: View {
                     Text("Add")
                         .font(.title)
                     .padding()
-                    .background(Color("G4"))
-                    .cornerRadius(10)
+                    .background(Color("R1"))
+                    .cornerRadius(14)
                 }.padding([.bottom])
                 Spacer()
                 Button(action: {isPresented = false}){
@@ -58,13 +64,13 @@ struct ConfirmView: View {
                         .font(.title)
                     .padding()
                     .background(Color("G4"))
-                    .cornerRadius(10)
+                    .cornerRadius(14)
                 }.padding([.bottom])
             }.padding()
         }
         .background(Color("G3"))
         .foregroundColor(Color("IP"))
-        .cornerRadius(20)
+        .cornerRadius(14)
     }
 }
 

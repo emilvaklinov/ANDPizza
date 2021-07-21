@@ -30,7 +30,7 @@ struct MenuListView: View {
 //                    }
 //                }
 //                }
-                .navigationBarTitle("Pizza Order")
+                .navigationBarTitle("Get your order")
             }
         }
     }

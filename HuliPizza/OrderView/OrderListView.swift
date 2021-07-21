@@ -18,12 +18,13 @@ struct OrderListView: View {
                     ForEach(orderModel.orders){item in
                         OrderRowView(orderItem:item)
                     }
-                    .onDelete(perform:delete)
+                    .onDelete(perform:deleteOrder)
                 }
             }
         }
     }
-    func delete(at offsets:IndexSet) {
+    
+    private func deleteOrder(at offsets:IndexSet) {
         orderModel.orders.remove(atOffsets: offsets)
     }
 }

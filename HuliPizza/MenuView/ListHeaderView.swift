@@ -14,14 +14,14 @@ struct ListHeaderView: View {
         HStack {
             Text(text)
                 .padding(.leading, 5)
-                .foregroundColor(Color("G1"))
+                .foregroundColor(Color("IP"))
             Spacer()
             Text(orderModel.formattedTotal)
                 .fontWeight(.heavy)
                 .padding()
         }
         .font(.headline)
-        .background(Color("G4"))
+        .background(Color("R1"))
     }
 }
 

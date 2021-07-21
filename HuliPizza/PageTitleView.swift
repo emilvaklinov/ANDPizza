@@ -26,12 +26,13 @@ struct PageTitleView: View {
                 .rotationEffect(isDisplayingOrders ?? false ? Angle(degrees: 0.0) : Angle(degrees: (180.0)))
                 .animation(.easeInOut(duration: 0.5))
                 .font(sizeClass != .compact ? .title : staticFont)
-                .foregroundColor(isDisplayingOrders != nil ? Color("G1") : .clear)
+                .foregroundColor(isDisplayingOrders != nil ? Color("IP") : .clear)
             .padding()
             ,alignment: .leading
         )
-        .foregroundColor(Color("G1"))
-        .background(Color("G4"))
+        .foregroundColor(Color("IP"))
+        .background(Color("R1"))
+        .cornerRadius(1.0)
     }
 }
 
