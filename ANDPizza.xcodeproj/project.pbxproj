@@ -50,7 +50,7 @@
 		B00BC2A62697929900EE3A96 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		B00BC2A82697A9CD00EE3A96 /* CloseUpMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseUpMapView.swift; sourceTree = "<group>"; };
 		B00BC2E6269823E800EE3A96 /* GridNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridNavigationView.swift; sourceTree = "<group>"; };
-		B081F8042694B5D700BD9255 /* HuliPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuliPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B081F8042694B5D700BD9255 /* ANDPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ANDPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B081F8072694B5D700BD9255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B081F8092694B5D700BD9255 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B081F80B2694B5D700BD9255 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		B081F8052694B5D700BD9255 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B081F8042694B5D700BD9255 /* HuliPizza.app */,
+				B081F8042694B5D700BD9255 /* ANDPizza.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,9 +179,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B081F8032694B5D700BD9255 /* HuliPizza */ = {
+		B081F8032694B5D700BD9255 /* ANDPizza */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B081F8182694B5DA00BD9255 /* Build configuration list for PBXNativeTarget "HuliPizza" */;
+			buildConfigurationList = B081F8182694B5DA00BD9255 /* Build configuration list for PBXNativeTarget "ANDPizza" */;
 			buildPhases = (
 				B081F8002694B5D700BD9255 /* Sources */,
 				B081F8012694B5D700BD9255 /* Frameworks */,
@@ -191,9 +191,9 @@
 			);
 			dependencies = (
 			);
-			name = HuliPizza;
+			name = ANDPizza;
 			productName = HuliPizza;
-			productReference = B081F8042694B5D700BD9255 /* HuliPizza.app */;
+			productReference = B081F8042694B5D700BD9255 /* ANDPizza.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +210,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B081F7FF2694B5D700BD9255 /* Build configuration list for PBXProject "HuliPizza" */;
+			buildConfigurationList = B081F7FF2694B5D700BD9255 /* Build configuration list for PBXProject "ANDPizza" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -223,7 +223,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B081F8032694B5D700BD9255 /* HuliPizza */,
+				B081F8032694B5D700BD9255 /* ANDPizza */,
 			);
 		};
 /* End PBXProject section */
@@ -448,7 +448,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B081F7FF2694B5D700BD9255 /* Build configuration list for PBXProject "HuliPizza" */ = {
+		B081F7FF2694B5D700BD9255 /* Build configuration list for PBXProject "ANDPizza" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B081F8162694B5DA00BD9255 /* Debug */,
@@ -457,7 +457,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B081F8182694B5DA00BD9255 /* Build configuration list for PBXNativeTarget "HuliPizza" */ = {
+		B081F8182694B5DA00BD9255 /* Build configuration list for PBXNativeTarget "ANDPizza" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B081F8192694B5DA00BD9255 /* Debug */,
