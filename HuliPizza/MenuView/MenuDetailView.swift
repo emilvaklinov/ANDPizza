@@ -47,8 +47,6 @@ struct MenuDetailView: View {
     }
     
     
-    
-    
     func menuOptionsView()-> some View{
         return  VStack{
             SizePickerView(size:$settings.size)
@@ -62,38 +60,42 @@ struct MenuDetailView: View {
     var body: some View {
         GeometryReader{ geo in
             VStack {
+                PageTitleView(title: self.menuItem.name)
+                    .font(.title)
+                Spacer()
                 HStack{
-                    PageTitleView(title: self.menuItem.name)
-                    Button(action: self.addItem) {
-                        Text("Add to order")
-                            
-                            .font(isCompactPortrait(geo: geo) ? staticFont : .title)
-                            .fontWeight(.bold)
-                            .padding([.leading,.trailing])
-                            .background(Color("G3"))
-                            .foregroundColor(Color("IP"))
-                            .cornerRadius(5)
+                    
+                    if isCompactPortrait(geo: geo){
+                        HStack{
+                            self.titleView()
+                            self.menuOptionsView()
+                        }
+                    } else {
+                        VStack{
+                            self.titleView()
+                            self.menuOptionsView()
+                        }
                     }
-                    .sheet(isPresented: self.$didOrder){
-                        ConfirmView(menuID: self.menuItem.id, isPresented: self.$didOrder, orderModel:self.orderModel, quantity: self.$quantity, size:self.$settings.size)
-                    }
+                    
+                }//Root VStack
+                .padding(.top, 5)
+                Button(action: self.addItem) {
+                    Text("Add to order")
+                        
+                        .font(isCompactPortrait(geo: geo) ? staticFont : .title)
+                        .fontWeight(.bold)
+                        .padding([.leading,.trailing])
+                        .background(Color("G4"))
+                        .foregroundColor(Color("IP"))
+                        .cornerRadius(5)
                 }
-                if isCompactPortrait(geo: geo){
-                    HStack{
-                        self.titleView()
-                        self.menuOptionsView()
-                    }
-                } else {
-                    VStack{
-                        self.titleView()
-                        self.menuOptionsView()
-                    }
+                .sheet(isPresented: self.$didOrder){
+                    ConfirmView(menuID: self.menuItem.id, isPresented: self.$didOrder, orderModel:self.orderModel, quantity: self.$quantity, size:self.$settings.size)
                 }
-                
-                
-            }//Root VStack
-            .padding(.top, 5)
+            }
+            
         }
+        
         
     }// body
 }// MenuDetailView

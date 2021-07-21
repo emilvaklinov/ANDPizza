@@ -20,7 +20,7 @@ struct HistoryDetailView: View {
             VStack {
             PageTitleView(title: historyItem.name)
             MapView(latitude: historyItem.latitude, longitude: historyItem.longitude, regionRadius: 10000000)
-                .frame(height:150)
+                .frame(height:140)
             PresentMapButton(isPresented: $isPresented, historyItem: historyItem)
             Text(historyItem.history)
                 .frame(height:300)

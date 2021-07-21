@@ -31,7 +31,7 @@ struct DismissButton: View {
                 .padding()
                 .background(Color("G2"))
                 .foregroundColor(.primary)
-                .cornerRadius(5)
+                .cornerRadius(14)
         }
     }
 }
@@ -46,9 +46,11 @@ struct PresentMapButton: View {
                 Image(systemName:"chevron.up.square")
                 Text("Detail Map")
                     .fontWeight(.heavy)
-                    .padding(10)
+                    .padding(15)
             }.padding(.leading)
-            .background(Color("G3"))
+            .background(Color("R1"))
+            .cornerRadius(14)
+            .foregroundColor(.white)
         }.sheet(isPresented:$isPresented){
             CloseUpMapView(isMapPresented: self.$isPresented,historyItem:self.historyItem)
         }

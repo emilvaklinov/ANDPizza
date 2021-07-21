@@ -18,10 +18,10 @@ struct GridNavigationView:View {
                 ForEach(menuList){ menuPart in
                     HStack(alignment:.top){
                         VStack(alignment:.trailing){
-                            Image("Surf Board")
+                            Image("PizzaHub-Logo")
                                 .resizable()
                                 .scaledToFit()
-                                .padding(.bottom,10)
+                                .padding(.bottom,20)
                             Text(menuPart.name).font(.headline)
                         }.frame(width:100)
 //                        VStack{

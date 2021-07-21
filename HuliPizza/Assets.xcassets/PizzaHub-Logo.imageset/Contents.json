@@ -1,17 +1,16 @@
 {
   "images" : [
     {
-      "filename" : "Surf Board.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Surf Board@2x.png",
+      "filename" : "PizzaHub-Logo.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Surf Board@3x.png",
+      "filename" : "PizzaHub-Logo-1.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
