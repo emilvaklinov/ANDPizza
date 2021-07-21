@@ -37,13 +37,15 @@ struct ConfirmView: View {
                 self.isPresented = false
                 }
             Divider()
-            Text("Confirm your order of \(quantity) \(size.formatted())\(name) pizza")
-                .font(.headline)
+            Text("Confirm your \(quantity) \(size.formatted())\(name)")
+                .font(.body)
             TextField("Add your comments here", text: $comments)
                 .frame(height: 40)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding([.horizontal], 4)
+//                .textFieldStyle(RoundedBorderTextFieldStyle())
                 .background(Color("G2"))
                 .cornerRadius(10)
+                .padding([.horizontal], 20)
             
             SizePickerView(size: $size)
             QuantityStepperView(quantity: $quantity)

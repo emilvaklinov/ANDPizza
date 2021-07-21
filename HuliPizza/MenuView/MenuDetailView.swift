@@ -87,7 +87,7 @@ struct MenuDetailView: View {
                         .padding([.leading,.trailing])
                         .background(Color("G4"))
                         .foregroundColor(Color("IP"))
-                        .cornerRadius(5)
+                        .cornerRadius(14)
                 }
                 .sheet(isPresented: self.$didOrder){
                     ConfirmView(menuID: self.menuItem.id, isPresented: self.$didOrder, orderModel:self.orderModel, quantity: self.$quantity, size:self.$settings.size)
