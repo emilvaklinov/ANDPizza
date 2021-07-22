@@ -83,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B06AA4D126A9DC9400C49FD7 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				B081F8072694B5D700BD9255 /* AppDelegate.swift */,
+				B081F8092694B5D700BD9255 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		B081F7FB2694B5D600BD9255 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +111,7 @@
 		B081F8062694B5D700BD9255 /* HuliPizza */ = {
 			isa = PBXGroup;
 			children = (
+				B06AA4D126A9DC9400C49FD7 /* Delegates */,
 				B081F80B2694B5D700BD9255 /* ContentView.swift */,
 				B0F3955D2695F45B0061A4DA /* ContentHeaderView.swift */,
 				B0F395652695F6D60061A4DA /* PageTitleView.swift */,
@@ -110,9 +120,7 @@
 				B0F395572695F2B20061A4DA /* Model */,
 				B0F395562695F2A60061A4DA /* OrderView */,
 				B0F395552695F28D0061A4DA /* HistoryView */,
-				B081F8072694B5D700BD9255 /* AppDelegate.swift */,
 				B00BC2A026974EFA00EE3A96 /* RootTabView.swift */,
-				B081F8092694B5D700BD9255 /* SceneDelegate.swift */,
 				B00BC2A42697924600EE3A96 /* MapViewController.swift */,
 				B081F80D2694B5DA00BD9255 /* Assets.xcassets */,
 				B081F8122694B5DA00BD9255 /* LaunchScreen.storyboard */,

@@ -18,13 +18,14 @@ struct HistoryDetailView: View {
         }
         return ScrollView {
             VStack {
-            PageTitleView(title: historyItem.name)
+                PageTitleView(title: historyItem.name).ignoresSafeArea()
             MapView(latitude: historyItem.latitude, longitude: historyItem.longitude, regionRadius: 10000000)
-                .frame(height:140)
-            PresentMapButton(isPresented: $isPresented, historyItem: historyItem)
+                .frame(height:150)
+                PresentMapButton(isPresented: $isPresented, historyItem: historyItem).ignoresSafeArea()
+                    .cornerRadius(20)
+                    .padding(10)
             Text(historyItem.history)
-                .frame(height:300)
-                .padding()
+                .frame(width: 390, height: 370, alignment: .top)
             Spacer()
             }
         }

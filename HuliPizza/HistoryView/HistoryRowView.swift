@@ -12,11 +12,12 @@ struct HistoryRowView: View {
     var body: some View {
         HStack(alignment:.top) {
             Image("\(historyItem.id)_100w")
-                .clipShape(Circle())
+                .clipped()
+                .clipShape(Capsule())
                 .shadow(color: Color.black.opacity(0.5), radius: 10, x: 5, y: 5)
             Text(historyItem.name)
                 .font(.title)
-                .padding()
+
             Spacer()
         }
 //        .overlay(
