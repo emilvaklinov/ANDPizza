@@ -7,6 +7,7 @@ Sample app for fetching and retriving data from local JSON where user can choose
 - iOS 14.5 +
 - Combine
 - MapKit
+- Figma UX Design
 
 
 <figure class="video_container">
