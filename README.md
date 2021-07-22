@@ -18,3 +18,7 @@ DEMO: https://youtu.be/cVnElAiFx5w
     <source src="Demo/Demo.mov" type="video/mov">
   </video>
 </figure>
+
+<figure class="video_container">
+  <iframe src="https://youtu.be/cVnElAiFx5w" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
