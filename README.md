@@ -9,10 +9,5 @@ Sample app for fetching and retriving data from local JSON where user can choose
 - MapKit
 - Figma UX Design
 
-
-<iframe frameborder=“0” scrolling=“no” marginheight=“0” marginwidth=“0"width=“788.54” height=“443" type=“text/html” src=“https://youtu.be/cVnElAiFx5w”></iframe>
-
-<figure class="video_container">
-  <iframe src="https://youtu.be/cVnElAiFx5w" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
+DEMO: https://youtu.be/cVnElAiFx5w
 
