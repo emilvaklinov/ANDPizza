@@ -9,16 +9,37 @@ Sample app for fetching and retriving data from local JSON where user can choose
 - MapKit
 - Figma UX Design
 
+It’s a SWIFTUI up skilling project.
 
+ANDPizza is a space where ANDis can choose and get there very own special pizza for any club days and events.
 
-DEMO: https://youtu.be/cVnElAiFx5w
+## MVP
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="">
-    <source src="Demo/Demo.mov" type="video/mov">
-  </video>
-</figure>
+User is able to see all list of Pizza and Deserts.
 
-<figure class="video_container">
-  <iframe src="https://youtu.be/cVnElAiFx5w" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
+User can choose different size of Pizza and Deserts and add to basket.
+
+User can see the order confirmation and be able to add a message and change the size or quantity.
+
+User can see the history of origin of the item with map location. 
+
+User can see the basket.
+
+ 
+
+## Work Flow
+
+Generating the idea and proto persona
+
+Create design in Figma
+
+Choosing the tech stack
+
+Implementing MVVM with SwiftUI
+
+Using Combine
+
+Using MapKit
+
+**DEMO**: https://youtu.be/cVnElAiFx5w
+
