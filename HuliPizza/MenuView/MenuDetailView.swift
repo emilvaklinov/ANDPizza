@@ -17,7 +17,7 @@ struct MenuDetailView: View {
     @State var quantity:Int = 1
     var menuItem:MenuItem
     var formattedPrice:String{
-        String(format:"£%3.2f",menuItem.price * Double(quantity) * size.rawValue)
+        String(format:"%3.2f",menuItem.price * Double(quantity) * size.rawValue)
     }
     func addItem(){
         //        orderModel.add(menuID: menuItem.id)
@@ -111,7 +111,7 @@ struct QuantityStepperView: View {
         Stepper(value: $quantity, in: 1...10){
             Text("Quantity \(quantity)")
         }
-        .padding()
+            .padding()
     }
 }
 

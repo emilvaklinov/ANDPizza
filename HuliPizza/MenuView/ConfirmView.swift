@@ -37,7 +37,7 @@ struct ConfirmView: View {
                 self.isPresented = false
                 }
             Divider()
-            Text("Confirm your \(quantity) \(size.formatted())\(name)")
+            Text("Confirm your \(quantity) \(size.formatted()) \(name)")
                 .font(.body)
             TextField("Add your comments here", text: $comments)
                 .frame(height: 40)
