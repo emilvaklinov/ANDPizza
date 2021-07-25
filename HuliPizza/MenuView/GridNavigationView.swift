@@ -10,7 +10,7 @@ import SwiftUI
 struct GridNavigationView:View {
     @ObservedObject var orderModel:OrderModel
     var menuList = MenuModel().menu
-    let columns = Array(repeating: GridItem(.flexible(minimum:75), spacing: 5, alignment: .top), count: 2)
+    let columns = Array(repeating: GridItem(.flexible(minimum:70, maximum:90), spacing: 5, alignment: .top), count: 2)
     let bigColumn = GridItem(.flexible(minimum:100, maximum:120), spacing: 5, alignment: .top)
     var body: some View {
         ScrollView{

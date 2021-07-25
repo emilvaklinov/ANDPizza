@@ -43,7 +43,7 @@ struct PresentMapButton: View {
     var body: some View {
         Button(action:{self.isPresented = true}){
             HStack{
-                Image(systemName:"chevron.up.square")
+                Image(systemName:"chevron.down.square")
                 Text("Detail Map")
                     .fontWeight(.heavy)
                     .padding(15)

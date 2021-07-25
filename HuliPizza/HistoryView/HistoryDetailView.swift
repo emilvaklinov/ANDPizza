@@ -20,12 +20,17 @@ struct HistoryDetailView: View {
             VStack {
                 PageTitleView(title: historyItem.name).ignoresSafeArea()
             MapView(latitude: historyItem.latitude, longitude: historyItem.longitude, regionRadius: 10000000)
-                .frame(height:150)
+                .frame(width: 340, height:120, alignment: .center)
+                .border(Color.white, width: 1)
+//                .clipShape(Capsule())
+                .shadow(color: Color.black.opacity(0.8),
+                            radius: 5, x: 5, y: 5)
                 PresentMapButton(isPresented: $isPresented, historyItem: historyItem).ignoresSafeArea()
                     .cornerRadius(20)
                     .padding(10)
             Text(historyItem.history)
-                .frame(width: 390, height: 370, alignment: .top)
+                .frame(width: 350, height: 370, alignment: .topLeading)
+                
             Spacer()
             }
         }
