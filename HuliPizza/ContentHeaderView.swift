@@ -11,13 +11,13 @@ struct ContentHeaderView: View {
     var body: some View {
         VStack {
             ZStack{
-                Image("Surf Board")
+                Image("AND")
                     .resizable()
                     .scaledToFit()
                     .frame(minWidth: 300, idealWidth: 500, maxWidth: 600, minHeight: 75, idealHeight: 143, maxHeight: 150, alignment: .center)
-                Text("Huli Pizza Company")
-                    .offset(x: -20, y: 30)
-                    .font(Font.custom("Avinir-Black", size: 20))
+                Text("Pizza Hub")
+                    .offset(x: 0, y: 58)
+                    .font(Font.custom("Avinir-Black", size: 21))
                     .foregroundColor(.white)
             }
         }

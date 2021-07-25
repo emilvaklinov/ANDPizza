@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B0067B8D26ADE5A2007400C6 /* ApplePayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0067B8C26ADE5A2007400C6 /* ApplePayManager.swift */; };
-		B0088F5526ACA5F2008797B5 /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0088F5426ACA5F2008797B5 /* PaymentButton.swift */; };
 		B00BC295269731B100EE3A96 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00BC294269731B100EE3A96 /* HistoryModel.swift */; };
 		B00BC297269731D700EE3A96 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00BC296269731D700EE3A96 /* MenuModel.swift */; };
 		B00BC299269731F600EE3A96 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00BC298269731F600EE3A96 /* OrderModel.swift */; };
@@ -42,7 +41,6 @@
 
 /* Begin PBXFileReference section */
 		B0067B8C26ADE5A2007400C6 /* ApplePayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayManager.swift; sourceTree = "<group>"; };
-		B0088F5426ACA5F2008797B5 /* PaymentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
 		B00BC294269731B100EE3A96 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		B00BC296269731D700EE3A96 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		B00BC298269731F600EE3A96 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
@@ -169,7 +167,6 @@
 			children = (
 				B0F395592695F3110061A4DA /* OrderListView.swift */,
 				B0F3955F2695F51E0061A4DA /* OrderRowView.swift */,
-				B0088F5426ACA5F2008797B5 /* PaymentButton.swift */,
 			);
 			path = OrderView;
 			sourceTree = "<group>";
@@ -268,7 +265,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0088F5526ACA5F2008797B5 /* PaymentButton.swift in Sources */,
 				B00BC295269731B100EE3A96 /* HistoryModel.swift in Sources */,
 				B00BC2A72697929900EE3A96 /* MapView.swift in Sources */,
 				B00BC2E7269823E800EE3A96 /* GridNavigationView.swift in Sources */,
