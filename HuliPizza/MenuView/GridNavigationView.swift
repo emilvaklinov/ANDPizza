@@ -21,7 +21,7 @@ struct GridNavigationView:View {
                             Image("AND")
                                 .resizable()
                                 .scaledToFit()
-//                                .padding(.bottom,5)
+                                .padding(.leading,10)
                             Text(menuPart.name).font(.headline)
                                 .padding(.bottom,5)
                         }.frame(width:90)
@@ -34,8 +34,9 @@ struct GridNavigationView:View {
                                             Image("\(child.id)_100w")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .border(Color.white, width: 1)                  .clipShape(Capsule())
-                                                                   .shadow(color: Color.black.opacity(0.5),
+                                                .border(Color.white, width: 1)
+                                                .clipShape(Capsule())
+                                                .shadow(color: Color.black.opacity(0.5),
                                                             radius: 5, x: 5, y: 5)
                                         }
                                     }
